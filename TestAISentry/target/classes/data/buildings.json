@@ -1,0 +1,129 @@
+[
+  {
+    "name": "Building A",
+    "description": "Main office building",
+    "floors": [
+      {
+        "floorNumber": 1,
+        "places": [
+          {
+            "name": "Reception",
+            "description": "Welcome desk for visitors",
+            "directions": "Take the main entrance and turn left",
+            "category": "Information"
+          },
+          {
+            "name": "Conference Room 1",
+            "description": "Large conference room",
+            "directions": "Take the elevator to the first floor and it's on your right",
+            "category": "Meeting"
+          },
+          {
+            "name": "Cafeteria",
+            "description": "Employee dining area",
+            "directions": "Walk straight from the entrance",
+            "category": "Amenity"
+          },
+          {
+            "name": "Fitness Center",
+            "description": "Gym for employees",
+            "directions": "On the ground floor next to the stairs",
+            "category": "Amenity"
+          }
+        ]
+      },
+      {
+        "floorNumber": 2,
+        "places": [
+          {
+            "name": "IT Department",
+            "description": "Information Technology department",
+            "directions": "Take the stairs to the second floor and turn right",
+            "category": "Department"
+          },
+          {
+            "name": "Human Resources",
+            "description": "HR department",
+            "directions": "On the second floor, opposite to the stairs",
+            "category": "Department"
+          },
+          {
+            "name": "Restrooms",
+            "description": "Public restrooms",
+            "directions": "Restrooms are located near the elevator",
+            "category": "Toilet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Building B",
+    "description": "R&D lab building",
+    "floors": [
+      {
+        "floorNumber": 1,
+        "places": [
+          {
+            "name": "Lab 101",
+            "description": "Research lab",
+            "directions": "Take the main entrance and it's the first door on your right",
+            "category": "Lab"
+          },
+          {
+            "name": "Lab 102",
+            "description": "Research lab",
+            "directions": "Next to Lab 101",
+            "category": "Lab"
+          },
+          {
+            "name": "Lab 103",
+            "description": "Research lab",
+            "directions": "Opposite to Lab 102",
+            "category": "Lab"
+          }
+        ]
+      },
+      {
+        "floorNumber": 2,
+        "places": [
+          {
+            "name": "Conference Room 1",
+            "description": "Meeting room",
+            "directions": "Take the elevator to the second floor and it's on your right",
+            "category": "Meeting"
+          },
+          {
+            "name": "Restrooms",
+            "description": "Public restrooms",
+            "directions": "Restrooms are located near the stairs",
+            "category": "Toilet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Building C",
+    "description": "Warehouse",
+    "floors": [
+      {
+        "floorNumber": 1,
+        "places": [
+          {
+            "name": "Storage Area 1",
+            "description": "Storage for materials",
+            "directions": "Take the entrance on the right side",
+            "category": "Warehouse"
+          },
+          {
+            "name": "Storage Area 2",
+            "description": "Storage for finished products",
+            "directions": "On the left side from the entrance",
+            "category": "Warehouse"
+          }
+        ]
+      }
+    ]
+  }
+]
