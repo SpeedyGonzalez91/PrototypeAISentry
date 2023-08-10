@@ -65,3 +65,12 @@ button:hover {
 .message {
     margin-bottom: 8px;
 }
+.user-message {
+    color: blue; /* Set the color for user messages */
+    font-weight: bold; /* Set the font weight for user messages */
+}
+
+.ai-message {
+    color: green; /* Set the color for AI messages */
+    font-style: italic; /* Set the font style for AI messages */
+}
