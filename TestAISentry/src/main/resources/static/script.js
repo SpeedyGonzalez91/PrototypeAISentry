@@ -37,26 +37,22 @@ function appendMessage(sender, message) {
     const messagesContainer = document.createElement("div");
     messagesContainer.classList.add("messages-container");
 
-    // Check if the message is an object
     if (typeof message === "object") {
-        // If it's an object, check if it has a 'response' property and display its value as paragraphs
         if (message.response) {
-            const paragraphs = message.response.split('\n'); // Split the text into paragraphs using line breaks
+            const paragraphs = message.response.split('\n');
             for (const paragraph of paragraphs) {
                 const paragraphElement = document.createElement("p");
                 paragraphElement.textContent = paragraph;
                 messagesContainer.appendChild(paragraphElement);
             }
         } else {
-            // If there's no 'response' property, convert the entire object to a JSON string for better display
             const jsonString = JSON.stringify(message, null, 2);
             const preElement = document.createElement("pre");
             preElement.textContent = jsonString;
             messagesContainer.appendChild(preElement);
         }
     } else {
-        // Otherwise, simply display the message as it is
-        const paragraphs = message.split('\n'); // Split the text into paragraphs using line breaks
+        const paragraphs = message.split('\n');
         for (const paragraph of paragraphs) {
             const paragraphElement = document.createElement("p");
             paragraphElement.textContent = paragraph;
@@ -64,11 +60,20 @@ function appendMessage(sender, message) {
         }
     }
 
+    // Add CSS classes based on the sender
+    if (sender === "You") {
+        messagesContainer.classList.add("user-message");
+    } else if (sender === "AI") {
+        messagesContainer.classList.add("ai-message");
+    }
+
     messageBox.appendChild(messagesContainer);
 
     // Scroll the inner messages container to the top
     messagesContainer.scrollTop = 0;
 }
+
+
 
 
 
